@@ -1,0 +1,45 @@
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+  margin: 0
+  padding: 0
+  font-weight: $font-weight
+  font-size: $font-size
+  line-height: $line-height
+  font-family: $font-primary
+  background-color: $bg-color-main
+  color: $color-main
+
+.main-wrapper
+	padding: 0
+	min-width: 320px
+	position: relative
+	opacity: 1
+	min-height: 100%
+
+.wrapper
+	max-width: 1200px
+	padding: 0 40px 0 40px
+	margin: 0 auto
+	position: relative
+
+
+img
+	display: block
+	max-width: 100%
+
+/* Icons
+     ====================== */
+.ic
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	// background: $icons no-repeat
+
+// @each $i in next, prev
+// 	.ic--#{$i}
+// 		+s(ic--#{$i})

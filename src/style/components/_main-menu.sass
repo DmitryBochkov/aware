@@ -1,0 +1,61 @@
+.main-menu
+  list-style: none
+  margin: 0
+  margin-right: 70px
+  padding: 0
+  display: flex
+
+  &__item
+    position: relative
+    color: $color-main
+    &:hover
+      .dropdown-content
+        display: block
+
+  &__link
+    display: block
+    padding: 0 20px
+    line-height: 80px
+    color: inherit
+    text-decoration: none
+
+
+    [class*="icon"]
+      color: $accent
+      font-size: 8px
+
+.dropdown-content
+  display: none
+  width: 240px
+  padding: 30px
+  position: absolute
+  left: -10px
+  top: 100%
+  background-color: $color-main
+  color: #fff
+
+  &:before
+    +pseudo
+    +arr(14, 7, $color-main, t)
+    bottom: 100%
+    left: 30px
+
+
+.dropdown-menu
+  list-style: none
+  margin: 0
+  padding: 0
+
+  &__item
+    font-size: 12px
+    line-height: 16px
+    color: rgba(#fff, 0.7)
+
+  &__link
+    display: block
+    padding: 4px 0
+    color: inherit
+    text-decoration: none
+
+    &:hover
+      color: #fff
