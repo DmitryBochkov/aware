@@ -1,14 +1,25 @@
 .user-menu
   list-style: none
   padding: 0
+  width: 180px
   &__item
     border-bottom: 1px solid #ececec
     &:last-child
       border-bottom: none
   &__link
-    display: block
+    display: flex
+    align-items: center
     padding: 0 20px
     font-size: 12px
     color: $color-main
     text-decoration: none
     line-height: 40px
+    [class*="icon"]
+      width: 18px
+      text-align: center
+      margin-right: 15px
+      font-size: 16px
+      color: #ccc
+    .badge
+      position: static
+      margin-left: auto

@@ -1,0 +1,50 @@
+.cart-menu
+  width: 300px
+
+.cart-list
+  list-style: none
+  padding: 0
+
+  &__item
+    display: flex
+    align-items: center
+    padding: 10px
+    border-bottom: 1px solid #ececec
+
+  &__image
+    width: 80px
+    flex: none
+    text-align: center
+    img
+      display: inline-block
+      max-width: 100%
+
+.cart-list__delete
+  margin-left: 10px
+  flex: none
+  a
+    font-size: 12px
+    display: block
+    padding: 10px
+    color: #d5d5d5
+    text-decoration: none
+    &:hover,
+    &:active,
+    &:focus
+      color: $color-main
+.cart-info
+  padding: 20px 10px
+  display: flex
+  align-items: center
+  font-size: 12px
+
+.cart-total
+  display: block
+  width: 80px
+  padding: 10px
+  padding-right: 20px
+  text-align: right
+  color: #b8b8b8
+  font-family: $font-additonal
+  font-style: italic
+  line-height: 1.5
