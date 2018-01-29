@@ -1,0 +1,99 @@
+.filter
+  display: flex
+  min-height: 60px
+  border-bottom: 1px solid #ececec
+
+  &__sidebar
+    width: 240px
+    flex: none
+    padding: 10px 30px
+    display: flex
+    align-items: center
+    border-right: 1px solid #ececec
+
+  &__content
+    flex: 1
+    padding: 10px 30px
+    display: flex
+    align-items: center
+
+  &__info
+    color: #979797
+    font-size: 12px
+    line-height: 1.33
+
+.toggle-filter
+  padding: 0
+  margin-right: 20px
+  color: #d5d5d5
+  font-size: 16px
+  background-color: transparent
+  border: none
+  cursor: pointer
+  transition: 0.3s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $accent
+
+  .sr-only
+    display: none
+
+.sort
+  display: flex
+  position: relative
+  overflow: hidden
+  input
+    position: absolute
+    left: -9999px
+
+    &:checked + .sort__item
+      color: #fff
+      background-color: $color-main
+
+  &__item
+    margin-left: 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 30px
+    padding: 0 20px
+    color: $color-main
+    font-size: 12px
+    line-height: 1.33
+    border-radius: 20px
+    cursor: pointer
+    &:hover,
+    &:active,
+    &:focus
+      color: $accent
+
+    [class*="icon"]
+      color: #d5d5d5
+      margin-left: 5px
+
+.view-list
+  list-style: none
+  padding: 0
+  margin: 0
+  margin-left: auto
+  display: flex
+  align-items: center
+
+  &__item
+    margin-left: 10px
+    &:first-child
+      margin-left: 0
+    &.active
+      a
+        color: $color-main
+
+  &__link
+    font-size: 16px
+    text-decoration: none
+    color: #d5d5d5
+    &:hover,
+    &:active,
+    &:focus
+      color: #888
