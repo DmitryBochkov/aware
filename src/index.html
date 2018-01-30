@@ -270,48 +270,85 @@
           </div>
         </section>
 
-        <section class="filter">
-          <div class="filter__sidebar">
-            <button class="toggle-filter">
-              <span class="icon-sliders"></span>
-              <span class="sr-only">Filters</span>
-            </button>
-            <div class="filter__info">
-              34 items found
-            </div>
-          </div>
-          <div class="filter__content">
-            <div class="filter__info">
-              Sort by
-            </div>
-            <div class="sort">
-              <input type="radio" name="sort" id="price">
-              <label class="sort__item" for="price">
-                Price
-                <span class="icon-arrow-up-down"><span class="path1"></span><span class="path2"></span></span>
-              </label>
-              <input type="radio" name="sort" id="name">
-              <label class="sort__item" for="name">
-                Name
-                <span class="icon-data-transmission-bottom"></span>
-              </label>
-              <input type="radio" name="sort" id="date">
-              <label class="sort__item" for="date">
-                Date
-                <span class="icon-arrow-up-down"><span class="path1"></span><span class="path2"></span></span>
-              </label>
-            </div>
+        <div class="tab-wrap">
 
-            <ul class="view-list">
-              <li class="view-list__item">
-                <a class="view-list__link" href="#"><span class="icon-list"></span></a>
-              </li>
-              <li class="view-list__item active">
-                <a class="view-list__link" href="#"><span class="icon-list-2"></span></a>
-              </li>
-            </ul>
+          <section class="filter">
+            <div class="filter__sidebar">
+              <button class="toggle-filter">
+                <span class="icon-sliders"></span>
+                <span class="sr-only">Filters</span>
+              </button>
+              <div class="filter__info">
+                34 items found
+              </div>
+            </div>
+            <div class="filter__content">
+              <div class="filter__info">
+                Sort by
+              </div>
+              <div class="sort">
+                <input type="radio" name="sort" id="price">
+                <label class="sort__item" for="price">
+                  Price
+                  <span class="icon-arrow-up-down"><span class="path1"></span><span class="path2"></span></span>
+                </label>
+                <input type="radio" name="sort" id="name">
+                <label class="sort__item" for="name">
+                  Name
+                  <span class="icon-data-transmission-bottom"></span>
+                </label>
+                <input type="radio" name="sort" id="date">
+                <label class="sort__item" for="date">
+                  Date
+                  <span class="icon-arrow-up-down"><span class="path1"></span><span class="path2"></span></span>
+                </label>
+              </div>
+
+              <ul class="view-list tabs">
+                <li class="view-list__item">
+                  <a class="view-list__link" href="#tab1"><span class="icon-list"></span></a>
+                </li>
+                <li class="view-list__item active">
+                  <a class="view-list__link" href="#tab2"><span class="icon-list-2"></span></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <div class="main-content">
+            <aside class="filters-sidebar">
+              <div class="accordion">
+                <div class="accordion__header">
+                  1
+                </div>
+                <div class="accordion__body">
+                  11
+                </div>
+                <div class="accordion__header">
+                  2
+                </div>
+                <div class="accordion__body">
+                  22
+                </div>
+              </div>
+            </aside>
+
+            <section class="product-grid">
+
+              <div class="box-tab-cont">
+                <div id="tab1" class="tab-cont hide">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing1.
+                </div>
+                <div id="tab2" class="tab-cont">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing2.
+                </div>
+              </div>
+
+            </section>
           </div>
-        </section>
+
+        </div>
+
 
       </main>
 
@@ -321,6 +358,7 @@
 
     </div>
 
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

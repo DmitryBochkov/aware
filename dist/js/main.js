@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".tabs a").on("click",function(a){a.preventDefault(),$(this).parents(".tab-wrap").find(".tab-cont").addClass("hide"),$(this).parent().siblings().removeClass("active");var t=$(this).attr("href");$(t).removeClass("hide"),$(this).parent().addClass("active")})});
