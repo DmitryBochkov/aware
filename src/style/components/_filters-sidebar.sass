@@ -9,6 +9,11 @@
       align-items: center
       padding: 15px 30px
       border-top: 1px solid #ececec
+      cursor: pointer
+      &.open
+        [class*='icon']
+          &:before
+            content: '\e909'
       &:first-child
         border-top: none
       [class*='icon']
@@ -43,6 +48,9 @@
       color: #222
       font-weight: 400
       cursor: pointer
+
+    &--columns
+      column-count: 2
 
     .jq-checkbox
       height: 14px
